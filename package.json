@@ -6,11 +6,13 @@
 	"license": "MIT",
 	"proxy": "http://localhost:8080",
 	"author": "truongdb",
+	"engines": {
+		"node": "v18.x"
+	},
 	"scripts": {
-		"dev": "nodemon ./src/index.ts -p 8080",
-		"build": "tsc -p .",
-		"start": "node ./build/index.ts -p 8080",
-		"lint": "next lint"
+		"dev": "nodemon ./src/index.ts",
+		"start": "nodemon ./src/index.ts",
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"dependencies": {
 		"cookie-parser": "^1.4.6",
