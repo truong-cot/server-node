@@ -6,9 +6,7 @@ import cookieParser from 'cookie-parser';
 // Import routes
 import route_version_1 from './routes/route-version1';
 import route_version_2 from './routes/route-version2';
-import database from './config/database';
-
-// Function connect database
+import connect_database from './config/database';
 
 // Config dotenv
 dotenv.config();
@@ -29,7 +27,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // Kết nối database
-database();
+connect_database();
 
 // Cấu hình routes
 route_version_1(app, '/api/v1');
