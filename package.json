@@ -10,6 +10,7 @@
 		"node": ">=12.0.0"
 	},
 	"scripts": {
+		"dev": "nodemon src/index.ts",
 		"start": "nodemon src/index.ts",
 		"build": "tsc",
 		"deploy": "vercel"
