@@ -1,4 +1,4 @@
-import homeRoute from './homeRoute';
+import homeRoute from './home_route';
 
 // Khởi tạo route version 2
 const route_version_2 = (app: any, version: string) => {
