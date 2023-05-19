@@ -1,3 +1,4 @@
+// Response
 export enum ERROR_CODE {
 	THAT_BAI,
 	THANH_CONG,
@@ -16,4 +17,11 @@ export enum STATUS_CODE {
 	UNAUTHORIZED = 401,
 	NOT_FOUND = 404,
 	SERVER = 500,
+}
+
+// General
+export enum GENDER {
+	NAM = 1,
+	NU = 2,
+	KHAC = 3,
 }
