@@ -13,3 +13,10 @@ cloudinary.config({
 });
 
 export default cloudinary;
+
+export const uploadFile = async (file: any) => {
+	const respon: any = await cloudinary.uploader.upload(file.path, {
+		folder: 'server-node-upload',
+	});
+	return respon;
+};

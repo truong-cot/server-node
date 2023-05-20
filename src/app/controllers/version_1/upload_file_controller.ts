@@ -1,14 +1,8 @@
-import {ERROR_CODE, ERROR_TEXT, STATUS_CODE} from './../../../../enum/index';
 import {Request, Response} from 'express';
-import resultData from '../../../../common/responsive_data';
-import cloudinary from '../../../config/cloudinary/index';
 
-const uploadFile = async (file: any) => {
-	const respon: any = await cloudinary.uploader.upload(file.path, {
-		folder: 'server-node-upload',
-	});
-	return respon;
-};
+import resultData from '../../../../common/responsive_data';
+import cloudinary, {uploadFile} from '../../../config/cloudinary/index';
+import {ERROR_CODE, ERROR_TEXT, STATUS_CODE} from './../../../../enum/index';
 
 const UploadFileController = {
 	// [POST] => /api/v1/upload-single-file
